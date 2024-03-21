@@ -8,9 +8,20 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  googleFonts: {
+    families: {
+      'Poppins': [400, 500, 700],
+    },
+    download: true,
+  },
   modules: [
     'nuxt-icon',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-  ]
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Poppins: [400, 500, 700],
+      },
+    }]
+  ],
 })
