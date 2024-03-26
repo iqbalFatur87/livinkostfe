@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     },
     download: true,
   },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   modules: [
     'nuxt-icon',
     '@nuxtjs/tailwindcss',
