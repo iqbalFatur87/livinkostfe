@@ -1,0 +1,62 @@
+.cardIcon{
+    @apply grid justify-center gap-2 border-[2px_solid_#FAFAFA] rounded-[25px] py-5 w-[140px] shadow-[3px_3px_4px_0px_rgba(0,0,0,0.15)] backdrop-blur-[12.5px];
+
+    .title{
+        @apply text-[32px] text-primary font-medium text-center;
+    }
+    .subTitle{
+        @apply text-black text-center;
+    }
+}
+
+.cardFeatures{
+    @apply w-[325px] h-[488px] grid justify-center mt-10;
+    .features{
+        @apply grid justify-center w-[325px] h-[448px] relative items-end;
+        .overlay{
+            background:var(--linear, linear-gradient(180deg, rgba(255, 255, 255, 0.50) -7.85%, rgba(14, 13, 13, 0.50) 60.6%, rgba(0, 0, 0, 0.78) 127.86%));
+            @apply rounded-[200px_200px_50px_50px] w-full h-full absolute z-10;
+        }
+        .body{
+            @apply grid z-20 text-white text-center py-9 px-3;
+            .title{
+                @apply font-bold mb-5;
+            }
+            .description{
+                @apply text-[16px];
+            }
+        }
+    }
+    .footer{
+        @apply flex justify-center;
+        .content{
+            @apply -mt-9 z-30 text-white font-bold w-[125px] h-[48px] bg-black items-center flex justify-center rounded-2xl;
+        }
+    }
+}
+
+.cardLivinMates{
+    @apply w-[1151px] h-[185px] rounded-[30px] bg-white shadow-2xl px-8;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.10), -10px -10px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.campusList{
+    @apply mt-5 grid grid-cols-2 gap-10;
+}
+
+.recommendation_all{
+    background:var(--button-close, linear-gradient(87deg, rgba(197, 142, 36, 0.84) -14.54%, #FCC864 130.51%));
+    @apply font-semibold text-center w-[200px] h-[40px] flex items-center justify-center rounded-2xl;
+}
+
+.advantages{
+    @apply my-20;
+    img{
+        @apply rounded-[100px_100px_50px_50px] object-cover;
+    }
+}
+
+
+
+
+/* @apply text-[32px] text-primary font-medium text-center; */

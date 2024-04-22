@@ -8,26 +8,20 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  googleFonts: {
-    families: {
-      'Poppins': [400, 500, 700],
-    },
-    download: true,
-  },
-  components: [
-    {
-      path: '~/components',
-      pathPrefix: false,
-    },
-  ],
   modules: [
     'nuxt-icon',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     ['@nuxtjs/google-fonts', {
       families: {
-        Poppins: [400, 500, 700],
+        wght: [400, 500, 700],
       },
+      subsets: ['latin'],
+      display: 'swap',
+      download: true,
+      preconnect: true,
+      preload: false,
+      base64: false,
     }]
   ],
 })
